@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right bottom, #7ed56fcc, #28b485cc);
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.container{
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.container h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.container form{
+    padding: 20px 40px;
+
+}
+
+form .input_feilds{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #adadad;
+}
+
+.input_feilds input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding:  0 5px;
+    font-size: 16px;
+}
+
+.input_feilds label{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    color: #adadad;
+    transition: all .3s;
+}
+
+.input_feilds span::before{
+    content:"";
+    height: 2px;
+    width: 100%;
+    background: #2691d9;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    transition: all .3s;
+}
+
+.input_feilds input:focus ~ label{
+    top:-5px;
+    color: #2691d9;
+}
+
+.input_feilds input:focus ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20 px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[ type = "submit"]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    background: #2691d9;
+    color: #e9f4fb;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+input[ type = "submit"]:hover{
+    border: #2691d9;
+}
+
+.sign_up{
+    text-align: center;
+    margin: 30px 0 ;
+    color: #666666;
+
+}
+
+.sign_up a{
+    text-decoration: none;
+}
+
+.sign_up a:hover{
+    text-decoration: underline ;
+}
