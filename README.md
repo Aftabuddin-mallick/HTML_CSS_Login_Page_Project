@@ -16,7 +16,3 @@ A simple and responsive **Login Page** built with **HTML5** and **CSS3**. This p
 ## 🛠️ Technologies Used
 - **HTML5** - Structure
 - **CSS3** - Styling and animations
-
----
-
-## 📂 Project Structure
